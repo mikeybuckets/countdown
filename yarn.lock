@@ -11316,6 +11316,11 @@ ws@^7.2.3:
   resolved "https://registry.yarnpkg.com/ws/-/ws-7.4.3.tgz#1f9643de34a543b8edb124bdcbc457ae55a6e5cd"
   integrity sha512-hr6vCR76GsossIRsr8OLR9acVVm1jyfEWvhbNjtgPOrfvAlKzvyeg/P6r8RuDjRyrcQoPQT7K0DGEPc7Ae6jzA==
 
+xeptaoreset.css@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/xeptaoreset.css/-/xeptaoreset.css-1.0.1.tgz#0a77f8b87cc3d1de18188c068526e2b3d7668a29"
+  integrity sha512-yNxy7q/2pyFQhvOERwmIS8iQmiATa2arAT+CHs66cOAOeL0404C03a5r1t6j25+8Jz2VT0Y5nTbPneHjjoSdFQ==
+
 xml-name-validator@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/xml-name-validator/-/xml-name-validator-3.0.0.tgz#6ae73e06de4d8c6e47f9fb181f78d648ad457c6a"
