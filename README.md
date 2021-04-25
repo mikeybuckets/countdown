@@ -1,4 +1,4 @@
-# Project Name
+# New Year Countdown 🎄
 
 by [Xeptao](https://github.com/xeptao/)
 
