@@ -1,0 +1,122 @@
+:root {
+	--heading-font-size: 20px;
+	--heading-margin: 13px;
+	--flex-spacing: 10px;
+	--big-number-font-size: 30px;
+	--dark-font: #08082b;
+	--spaced-container-margin: 0px;
+}
+
+::selection {
+	background: rgba(146, 146, 146, 0.452);
+}
+
+#root {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+}
+
+.App {
+	background: url("https://images.unsplash.com/photo-1517299321609-52687d1bc55a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80") center/cover no-repeat;
+	max-width: 2560px;
+	user-select: none;
+	width: 100%;
+	min-height: 100vh;
+	position: absolute;
+	top: 0;
+}
+
+* {
+	color: var(--dark-font);
+}
+
+.countdown > * {
+	text-align: center;
+}
+
+.heading {
+	font-size: var(--heading-font-size);
+	margin-bottom: var(--heading-margin);
+	margin-top: var(--heading-margin);
+	text-transform: capitalize;
+}
+
+.label {
+	font-weight: 500;
+	letter-spacing: -0.03em;
+}
+
+/* Supports */
+@supports not (margin-block: 10px) {
+	.spaced-container-large {
+		margin-top: var(--spaced-container-margin);
+		margin-bottom: var(--spaced-container-margin);
+	}
+}
+
+/* Queries */
+@media (min-width: 676px) {
+	:root {
+		--heading-font-size: 43px;
+		--flex-spacing: 33px;
+		--big-number-font-size: 70px;
+		--big-number-line-height: 1;
+		--spaced-container-margin: 4rem;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 675px) {
+	:root {
+		--heading-font-size: 32px;
+		--flex-spacing: 20px;
+		--big-number-font-size: 56px;
+		--big-number-line-height: 1;
+		--spaced-container-margin: 2.5rem;
+	}
+}
+
+@media (min-width: 350px) and (max-width: 499px) {
+	:root {
+		--heading-font-size: 23px;
+		--flex-spacing: 15px;
+		--big-number-font-size: 36px;
+	}
+}
+
+/* Utilities */
+.text-center {
+	text-align: center;
+}
+
+.margin-auto {
+	margin: 0 auto;
+}
+
+.fit {
+	width: fit-content;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.flex-margin > * + * {
+	margin-left: var(--flex-spacing);
+}
+
+.big-number {
+	font-weight: bolder;
+	font-size: var(--big-number-font-size);
+	line-height: var(--big-number-line-height);
+	user-select: text;
+}
+
+.spaced-container-large {
+	margin-block: var(--spaced-container-margin);
+}

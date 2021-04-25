@@ -4,7 +4,7 @@ by [Xeptao](https://github.com/xeptao/)
 
 <https://countdown-timer-react.web.app/>
 
-![Project Image](path-to-project.gif)
+![Project Image](https://pbs.twimg.com/media/Ez11qxoXoAEQJfS?format=jpg&name=large)
 
 ## Table Of Contents
 
