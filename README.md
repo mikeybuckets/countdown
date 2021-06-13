@@ -9,7 +9,6 @@ by [Xeptao](https://github.com/xeptao/)
 ## Table Of Contents
 
 * [What It Achieves](#what-it-achieves)
-* [Get Started](#get-started)
 * [Technologies And Dependencies](#technologies-and-dependencies)
 * [Contributing](#contributing)
 * [Contributors](#contributors)
@@ -18,14 +17,6 @@ by [Xeptao](https://github.com/xeptao/)
 ## What It Achieves
 
 This project improves your React.js skills. It challanges you because the build has to be responsive. The idea is to show how many months, days, minutes, and seconds left there are to the next year. It live-updates every second as well.
-
-## Get Started
-
-There are several ways to start creating this app:
-
-* Install with NPM: `$ npm install xeptao-countdown-assets`
-* Add with Yarn: `$ yarn add xeptao-countdown-assets`
-* Clone the GitHub repository: `$ git clone https://github.com/xeptao/coundown-assets`
 
 ## Technologies And Dependencies
 
