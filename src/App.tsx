@@ -1,21 +1,20 @@
-import React from "react";
 import "./main.css";
 import "./../node_modules/xeptaoreset.css/dist/xeptaoreset.min.css";
 import "./../node_modules/inter-ui/inter.css";
 
 const App = () => {
 	document.addEventListener("DOMContentLoaded", () => {
-		const days = document.querySelector(".days");
-		const hours = document.querySelector(".hours");
-		const minutes = document.querySelector(".minutes");
-		const seconds = document.querySelector(".seconds");
+		const days = document.querySelector(".days") as HTMLElement;
+		const hours = document.querySelector(".hours") as HTMLElement;
+		const minutes = document.querySelector(".minutes") as HTMLElement;
+		const seconds = document.querySelector(".seconds") as HTMLElement;
 
 		const clock = () => {
 			const getTime = () => {
 				const currentYear = new Date().getFullYear();
 				const nextYear = new Date(`Jan 01 ${currentYear + 1} 00:00:00`);
-				const timeNow = new Date();
-				const difference = timeNow - nextYear;
+        const timeNow = new Date();
+				const difference = +timeNow  - +nextYear;
 				const days = Math.floor(difference / 1000 / 60 / 60 / 24);
 				const hours = Math.floor(difference / 1000 / 60 / 60) % 24;
 				const minutes = Math.floor(difference / 1000 / 60) % 60;
@@ -38,19 +37,19 @@ const App = () => {
 				if (leftDays === 0 && leftHours === 0 && leftMinutes === 0 && leftSeconds === 0) {
 					timeFinished();
 				} else {
-					days.textContent = leftDays;
-					hours.textContent = leftHours;
-					minutes.textContent = leftMinutes;
-					seconds.textContent = leftSeconds;
+					days.textContent = leftDays as unknown as string;
+          hours.textContent = leftHours as unknown as string;
+          minutes.textContent = leftMinutes as unknown as string;
+					seconds.textContent = leftSeconds as unknown as string;
 
-					const checkIfShorterThanTwo = (element, value) => {
-						element.textContent = element.textContent.length < 2 ? "0" + value : value;
+          const showZeroIfShorterThanTwo = (element: Element, value: number) => {
+						element.textContent = (element.textContent as unknown as string).length < 2 ? "0" + String(value) : String(value);
 					};
 
-					checkIfShorterThanTwo(days, leftDays);
-					checkIfShorterThanTwo(hours, leftHours);
-					checkIfShorterThanTwo(minutes, leftMinutes);
-					checkIfShorterThanTwo(seconds, leftSeconds);
+					showZeroIfShorterThanTwo(days, leftDays);
+					showZeroIfShorterThanTwo(hours, leftHours);
+					showZeroIfShorterThanTwo(minutes, leftMinutes);
+					showZeroIfShorterThanTwo(seconds, leftSeconds);
 				}
 			};
 
